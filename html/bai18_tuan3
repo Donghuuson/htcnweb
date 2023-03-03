@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai18_tuan3</title>
+    <Style>
+        nav {
+            display: block;
+            position: absolute;
+            width: 100%;
+            background-color: #8fe78f;
+        }
+        
+        #menu {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        li {
+            display: inline;
+            margin-right:30px;
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+        }
+        
+        a:link {
+            text-decoration: none;
+            color: red;
+        }
+        
+        li ul {
+            display: none;
+        }
+        
+        li:hover ul {
+            display: block;
+            position: absolute;
+            background-color: #8fe78f;
+            margin:0;
+            left: 43%;
+        }
+        
+        li:hover ul li a:link {
+            display: block;
+            color: white;
+            margin-left: -30px;
+        }
+        
+        a:hover {
+            color: yellow;
+        }
+        
+        a {
+            color: white;
+        }
+    </Style>
+</head>
+
+<body>
+    <nav>
+        <ul id="menu" type="none">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a>
+                <ul type="none" id="submenu">
+                    <li><a href="#">Engineering</a></li>
+                    <li><a href="#">Telecom</a></li>
+                    <li><a href="#">Energy</a></li>
+                    <li><a href="#">Finance</a></li>
+                    <li><a href="#">Consultancy</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
