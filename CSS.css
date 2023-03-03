@@ -1,0 +1,23 @@
+h1{
+    position: fixed;
+    top: 0px;
+    left : 0px;
+    width : 100%;
+    coler: #ffffff;
+    background-color: #666666;
+    margin:0px;
+    padding:10px;
+    height:60px;
+    z-index: 2;
+}
+div,nav{
+    z-index: 1;
+    position: absolute;
+    top: 80px;
+    left:0px;
+    width: 100px;
+    height: 300px;
+    padding: 10px;
+    background-color: #d6d6d6;
+}
+
