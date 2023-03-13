@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #menu-container{
+        display: flex;
+            height: 68px;
+            justify-content: space-around;
+            align-items: center;
+    }
+    #left{
+        display: flex;
+        justify-content: space-around;
+        width: 20%;
+    }
+    #left-item{
+        display: flex;
+        color: #777;
+    }
+    #right{
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+        list-style: none;
+    }
+    #right-item-input{
+        height: 35px;
+            width: 200px;
+            padding: 4px 6px;
+            color: #777;
+    }
+    #logo{
+        display: flex;
+        justify-content: space-around ;
+    }
+    #container {
+            margin-top: 50px;
+    }
+    #container-title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 650;
+            color: #444;
+            margin-bottom: 50px;
+        }
+    #container-title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 750;
+            color: #444;
+            margin-bottom: 50px;
+        }
+        
+    #container-item {
+            position: relative;
+            display: flex;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            margin-bottom: 40px;
+        }
+        
+    #container-item-panel {
+            width: 50%;
+        }
+        
+    #container-item-img {
+            width:80%;
+            height:100%;
+        }
+        
+    #container-item-product {
+            width: 50%;
+            padding: 15px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        
+    #container-item-title {
+            color: #444;
+        }
+        
+    #container-content {
+            color: #555;
+        }
+        
+    #container-descrip {
+            color: #888;
+            font-size: 14px;
+        }
+    #container-item-btn {
+            display: inline-block;
+            width: 150px;
+            text-align: center;
+            color: white;
+            padding: 13px 0;
+            background-color: rgb(71, 141, 101);
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+    #container-item-img.last {
+            height:250px;
+        }
+        
+    #container-item-product.last {
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: flex;
+            justify-content:flex-end;
+            height: 80%;
+        }
+        
+    #container-item-product.last .container-item-title {
+            margin-bottom: 15px;
+        }
+        
+    #container-item-product.last .container-content {
+            margin-bottom: 20px;
+        }
+    #footer {
+            background-color: rgb(7, 1, 14);
+            color: white;
+            padding: 50px 0;
+            display: flex;
+        }
+        
+    #footer .wide {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+    #footer-left {
+            display: flex;
+        }
+        
+    #footer-left-list {
+            list-style: none;
+        }
+        
+    #footer-left-item {
+            padding: 10px;
+            font-size: 14px;
+            width: 180px;
+        }
+        
+    #footer-right h2 {
+            margin-bottom: 20px;
+        }
+        
+    #footer-right p {
+            margin-bottom: 20px;
+        }
+        
+    #footer-right .input-foorter {
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        
+    #footer-right input {
+            background-color: transparent;
+            border: unset;
+            outline: unset;
+            color: #777;
+            padding: 15px;
+        }
+        
+    #footer-right span {
+            display: inline-block;
+            background-color: rgb(71, 141, 101);
+            height: 100%;
+            padding: 15px;
+            position: absolute;
+            right: 0;
+        }
+        
+    #footer img {
+            margin-right: 10px;
+        }
+        
+    #footer-right p.title {
+            margin-top: 20px;
+            font-size: 13px;
+            text-align: center;
+            color: #888;
+        }
+</style>
+</head>
+
+<body>
+//menu
+   <div class="interface">
+    <div id="menu-container">
+        <div id="left">
+            <div id="left-item">Shop</div>
+            <div id="left-item">Offers</div>
+            <div id="left-item">Our Story</div>
+            <div id="left-item">Blog</div>
+        </div>
+        <div id="logo">
+             <img src="Image 1.png"alt="">
+        </div>
+        <div id="right">
+            <div id="right-item-input">
+                <input type="text>">
+            </div>
+            <div>
+                <img src="Button 1.png"alt="">
+            </div>
+            <div>
+                <img src="Avatar 1.png"alt="">
+            </div>
+
+        </div>
+
+    </div>
+   </div>
+//tiltle   
+<div class="container">
+    <div id="container-title">
+        <h1>
+            Promotions
+        </h1>
+    </div>
+    <div id="container-item">
+    <div id="container-item-panel">
+        <img id="container-item-img" src="Image 1 (1).png" alt="">
+    </div>
+
+    <div id="container-item-product">
+                    <h1 id="container-item-title">Promotion title</h1>
+                    <p id="container-content">
+                        Et ipsumirure ametcupdidata mollit exercitation consequat duis alipquip.RepreenderitLorem Veniam pariatur esse pariatur in aute tempor au
+                    </p>
+                    <p id="container-descrip">
+                        <i>"Velit dererunt elit prodent velit anim adippisicing"</i>
+                    </p>
+                    <span id="container-item-btn">Shop now</span>
+    </div>
+</div>
+<div id="container-item">
+<div id="container-item-panel">
+    <img id="container-item-img" src="Image 1 (2).png" alt="">
+</div>
+        <div id="container-item-product">
+            <h1 id="container-item-title">Promotion title</h1>
+            <p id="container-content">
+                Et ipsumirure ametcupdidata mollit exercitation consequat duis alipquip.RepreenderitLorem Veniam pariatur esse pariatur in aute tempor au
+            </p>
+            <p id="container-descrip">
+                <i>"Velit dererunt elit prodent velit anim adippisicing"</i>
+            </p>
+            <span id="container-item-btn">Shop now</span>
+        </div>
+    </div>
+    <div id="container-item">
+        <img id="container-item-img last" src="Image 1 (3).png" alt="">
+        <div id="container-item-product last">
+            <h1 id="container-item-title">Gift for your skin</h1>
+            <p id="container-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequuntur distinctio aut aliquid itaque facere laboriosam reprehenderit nemo
+            </p>
+            <span id="container-item-btn">Shop now</span>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div id="contact">
+        <div id="footer-left">
+            <ul id="footer-left-list">
+                <li id="footer-left-item">
+                    <h2>About</h2>
+                </li>
+                <li id="footer-left-item">
+                    Home
+                </li>
+                <li id="footer-left-item">
+                    Shop
+                </li>
+                <li id="footer-left-item">
+                    Out story
+                </li>
+                <li id="footer-left-item">
+                    Blogs
+                </li>
+            </ul>
+            <ul id="footer-left-list">
+                <li id="footer-left-item">
+                    <h2>Help</h2>
+                </li>
+                <li id="footer-left-item">
+                    Shipping & renturn
+                </li>
+                <li id="footer-left-item">
+                    Track order
+                </li>
+                <li id="footer-left-item">
+                    FAQs
+                </li>
+            </ul>
+            <ul id="footer-left-list">
+                <li id="footer-left-item">
+                    <h2>Contact</h2>
+                </li>
+                <li id="footer-left-item">
+                    Phone:
+                </li>
+                <li id="footer-left-item">
+                    <b>(+84)333 444 555</b>
+                </li>
+                <li id="footer-left-item">
+                    Email:
+                </li>
+                <li id="footer-left-item">
+                    <b>huuson000@gmail.com</b>
+                </li>
+            </ul>
+        </div>
+        <div id="footer-right">
+            <h2>Receive new promotion</h2>
+            <p>Duis ea tempor commodo amet reprehende</p>
+            <div id="input-foorter">
+                <input type="text" placeholder="Input your email">
+                <span>Subscribe</span>
+            </div>
+            <img src="LinkedIn 1.png" alt="">
+            <img src="Twitter 1.png" alt="">
+            <img src="YouTube 1.png" alt="">
+            <p id="title">2022 Brach, Inc. Privacy - Terms - Sitemap</p>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
