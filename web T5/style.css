@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#select-header{
+    display: flex;
+    justify-content: space-between;
+}
+#select-header-list{
+    display: flex;
+}
+.select-header-list-item{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.select-header-list-item-logo{
+    width: 100px;
+    margin-right: 60px;
+}
+.select-header-list-item-active{
+    border-bottom: 4px solid rgb(14, 221, 221);
+}
+}
+}
