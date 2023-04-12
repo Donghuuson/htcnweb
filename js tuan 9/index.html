@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+    body {
+        margin: 0 0 0 0;
+    }
+    
+    #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20%;
+        background-image: url(/img/Annotation\ 2023-04-05\ 084314.png);
+    }
+    
+    #container-text {
+        font-size: 50px;
+        width: 200px;
+    }
+    
+    #container-input {}
+    
+    span {
+        display: flex;
+        color: white;
+        background: black;
+        font-size: 50px;
+    }
+</style>
+
+<body>
+    <div id=container>
+        <form id=container-input>
+            <input type="text" name="display" size="52" value="00:00:00">
+        </form>
+        <button id=container-text>
+            <span id="over1" onmouseover="over1('red')" onmouseout="out1('black')" onclick="start()">
+                Start</span>
+        </button >
+        <button id=container-text>
+            <span id="over2" onmouseover="over2('red')" onmouseout="out2('black')" onclick="stop()">
+                Stop</span>
+        </button>
+        <button id=container-text>
+            <span id="over3" onmouseover="over3('red')" onmouseout="out3('black')" onclick="reset()">
+                Reset</span> 
+        </button>
+
+    </div>
+
+
+</body>
+<script>
+    var msec = 0
+    var sec = 0
+    var min = 0
+
+    function start() {
+        document.forms[0].display.value = min + ":" + sec + ":" + msec
+        go = setTimeout("start()", 1)
+        msec++
+        if (msec == 100) {
+            msec = 0
+            sec++
+        }
+        if (sec == 60) {
+            sec = 0
+            min++
+        }
+    }
+
+    function stop() {
+        clearTimeout(go)
+    }
+
+    function reset() {
+        window.location.reload()
+    }
+
+    function over1(test) {
+        document.getElementById('over1').style.background = test
+    }
+
+    function out1(test) {
+        document.getElementById('over1').style.background = test
+    }
+
+    function over2(test) {
+        document.getElementById('over2').style.background = test
+    }
+
+    function out2(test) {
+        document.getElementById('over2').style.background = test
+    }
+
+    function over3(test) {
+        document.getElementById('over3').style.background = test
+    }
+
+    function out3(test) {
+        document.getElementById('over3').style.background = test
+    }
+</script>
+
+</html>
